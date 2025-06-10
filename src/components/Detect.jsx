@@ -39,7 +39,7 @@ function Detect() {
     formData.append("file", image);
 
     try {
-      const response = await axios.post("http://localhost:5000/process", formData);
+      const response = await axios.post("https://backend-6-qceu.onrender.com/process", formData);
       console.log("API Response:", response.data);
 
       setProcessedSteps(response.data.steps || []);
