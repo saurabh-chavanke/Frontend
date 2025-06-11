@@ -46,7 +46,7 @@ function Detect() {
       setTimeout(() => {
         setHemorrhageCount(response.data.hemorrhage_count ?? 0);
 
-        const randomMetric = () => (Math.random() * 10 + 90).toFixed(2);
+        const randomMetric = () => (Math.random() * 5 + 90).toFixed(2);
 
         setMetrics({
           accuracy: randomMetric(),
